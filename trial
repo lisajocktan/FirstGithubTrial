@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="cococo" font size="78" >
+<style type="text/css">
+.myOtherTable { width:2000px;background-color:#FFFFE0;border-collapse:collapse;color:#000; }
+
+.myOtherTable td, .myOtherTable th { padding:5px;border:0; }
+.myOtherTable td { font-family:Georgia, Garamond, serif; border-bottom:1px solid #BDB76B;height:180px; }
+</style>
+
+
+<table class="myOtherTable">
+
+<tr>
+	<td><h2><font style="Times bold italic" size="+4" color="red"> <p><center>FITNESS</p></center><p><center>FOR</center></p><p><center>LIFE</p></center></font></td><td><img src="fitnes.PNG" width="400" height="300"><img src="art.jpg" width="300" height="300"></td>
+</tr>
+
+</table>
+<center><font size="+2">
+<h3>Exercise</h3>
+<h4>to lose and control weight</h4>
+<p>Moving burns more calories than sittting</p>
+	</font>
+<table border="2" width="400">
+<tr><td bgcolor="aquapink" alt="left"><b>
+<p><center>YOU CAN EASILY DO IT</center> </p>
+<p><center>ATLEAST 30-50 MINUTES</center></p>
+<p><center>PER DAY</center></p></td></b>
+</tr>
+</table>
+<h1><a href="medium.html" alt="left">MEDIUM ACTIVITY</a><br><a href="exercise.html">EXERCISES</a>
+</center>
+<marquee>
+<p><i>The greatest Wealth is Health</i></p></marquee>
+</body>
+</html>
