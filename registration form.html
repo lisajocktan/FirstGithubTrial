@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <style>
+      form {text-align: center;}
+    </style>
+	<script type="text/javascript">
+	function validation(){
+		if (document.myform.fname.value == ""  || !isNaN(document.myform.fname.value)){
+		alert("Write your first name in a correct format");
+		document.myform.fname.focus();
+		return false;
+		}
+		if(document.myform.lname.value == "" || !isNaN(document.myform.lname.value)){
+		alert("Write your last name");
+		document.myform.lname.focus();
+		return false;
+		}
+		if (document.myform.age.value == "" || isNaN(document.myform.age.value)){
+		alert("Make sure its filled and age is in numbers");
+		document.myform.age.focus();
+		return false
+		}
+		var emailid = document.myform.email.value;
+		posat = emailid.indexOf("@");
+		posdot = emailid.lastIndexOf(".");
+		if ( posat<1 || posdot - posat < 2){
+		alert("invalid email");
+		document.myform.email.focus();
+		return false;
+		}
+		
+		
+	}	
+	</script>
+</head>
+<body style="background-color:#DBC9C9">
+<form name="myform" onsubmit=return(validation());>
+  <h2><u>Registration Form</u></h2>
+  <p><label>First Name:</label><input type="text" name="fname"></p>
+  <p><label>Last Name:</label><input type="text" name="lname"></p>
+  <p><label>Age: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label><input type="text" name="age"></p>
+  <p><label>E-mail:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label><input type="text" name="email"></p>
+  <p><label>Password:&nbsp&nbsp</label><input type="password" name="password" required></p>
+  <p>Sex:
+    <input type="radio" name="gender"><label>Male</label>
+    <input type="radio" name="gender"><label>Female</label>
+  </p>
+  <p>Checkbox:
+    <input type="checkbox" name="pro"><label>Im a Student</label>
+    <input type="checkbox" name="pro"><label>Im a Business man</label>
+  </p>
+  <p>Birthday:</p>
+  <p>
+    Day:<input type="number" min="1" max="31">
+    Month:<input type="number" min="1" max="12">
+    Year:<input type="number" min="1900" max="2021">
+  </p>
+  <p>Submit Button:<input type="submit" value="submit"></p>
+  <p>Reset Button:&nbsp&nbsp;<input type="reset"></p>
+</form>
+</body>
+</html>
